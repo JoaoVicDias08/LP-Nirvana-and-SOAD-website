@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth overflow-x-hidden dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jalo Sounds</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="m-0 p-0 box-border bg-slate-900 text-white">
+    <header class="flex h-15 w-full items-center justify-between px-8">
+      <div class="flex space-x-6">
+        <p class="flex items-center justify-center text-center bg-emerald-600 rounded-3xl text-black px-8 font-semibold shadow-md hover:bg-emerald-700 hover:text-white transition-all py-2 duration-300 cursor-pointer border border-emerald-700">
+          Entrar
+        </p>
+        <p class="flex items-center justify-center text-center bg-emerald-600 rounded-3xl text-black px-8 font-semibold shadow-md hover:bg-emerald-700 hover:text-white transition-all py-2 duration-300 cursor-pointer border border-emerald-700 w-39">
+          Cadastrar-se
+        </p>
+      </div>
+      <nav class="flex items-center font-medium">
+        <ul class="flex flex-row space-x-5">
+          <li>
+            <a href="#home" class="cursor-pointer hover:text-emerald-300 transition-all">Home</a>
+          </li>
+          <li>
+            <a href="#band" class="cursor-pointer hover:text-emerald-300 transition-all">Bandas</a>
+          </li>
+          <li>
+            <a href="#albuns" class="cursor-pointer hover:text-emerald-300 transition-all">Álbuns</a>
+          </li>
+          <li>
+            <a href="#contact" class="cursor-pointer hover:text-emerald-300 transition-all">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="h-screen w-full border-1-white flex overflow-x-hidden bg-slate-950">
+      <div class="w-1/2 h-150 relative p-4 ml-15 mt-8">
+        <div id="image-carousel" class="relative w-full h-full overflow-hidden rounded-2xl">
+          <div class="absolute w-full h-full flex transition-transform duration-500">
+            <img src="/img/lp.jpg" class="w-full h-full object-cover flex-shrink-0 rounded-2xl saturate-100" />
+            <img src="/img/nirvana-capa.JPEG" class="w-full h-full object-cover flex-shrink-0 rounded-2xl grayscale-100" />
+            <img src="/img/system-capa.jpg" class="w-full h-full object-cover flex-shrink-0 rounded-2xl saturate-100" />
+          </div>
+        </div>
+      </div>
+
+      <aside class="flex flex-col items-center text-center mt-40 w-1/2">
+        <h1 class="font-bold text-6xl">
+          Conheça
+          <span class="text-gray-500">Linkin Park</span>, <br />
+          <span class="text-sky-400">Nirvana</span> e <br />
+          <span class="text-red-500">System of a Down</span>
+        </h1>
+        <p class="font-semibold text-3xl bg-emerald-600 rounded-4xl mt-5 w-40 flex justify-center py-1 hover:bg-emerald-700 hover:text-black transition-all">
+          <a href="#band">Conferir</a>
+        </p>
+      </aside>
+    </section>
+
+    <section id="band" class="h-screen flex justify-center items-center flex-col bg-slate-900">
+      <h2 class="text-8xl absolute mb-150 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-white animate-gradient drop-shadow-lg">
+        Bandas
+      </h2>
+      <div class="flex flex-row space-x-8 mt-15">
+        <div class="max-w-110 text-cente relative overflow-hidden rounded-3xl group">
+          <img class="w-full h-90 object-cover rounded-3xl fade-up" src="/img/nirvana.jpg" />
+          <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gray-900 text-white transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+            <p class="font-medium">
+              Nirvana , liderado por Kurt Cobain, revolucionou os anos 90 com o grunge, trazendo letras introspectivas e cruas, como em "Smells Like Teen Spirit".
+            </p>
+            <p>
+              <a href="#albuns" class="font-medium text-sky-400 cursor-pointer hover:text-sky-600">Conhecer músicas</a>
+            </p>
+          </div>
+        </div>
+        <div class="max-w-110 text-cente relative overflow-hidden rounded-3xl group">
+          <img class="w-full h-90 object-cover rounded-3xl fade-up" src="/img/lp.jpg" />
+          <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gray-900 text-white transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+            <p class="font-medium">
+              Linkin Park , com sua fusão de nu-metal, rap e eletrônica, conquistou o mundo nos anos 2000 com álbuns como Hybrid Theory , abordando temas de angústia e superação.
+            </p>
+            <p>
+              <a href="#albuns" class="font-medium text-sky-400 cursor-pointer hover:text-sky-600">Conhecer músicas</a>
+            </p>
+          </div>
+        </div>
+        <div class="max-w-110 text-cente relative overflow-hidden rounded-3xl group">
+          <img class="w-full h-90 object-cover rounded-3xl fade-up" src="/img/system.jpg" />
+          <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gray-900 text-white transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+            <p class="font-medium">
+              System of a Down , conhecido por seu metal alternativo e letras politizadas, mistura influências armênias e críticas sociais em músicas como "Chop Suey!".
+            </p>
+            <p>
+              <a href="#albuns" class="font-medium text-sky-400 cursor-pointer hover:text-sky-600">Conhecer músicas</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-slate-950 h-1 mt-30"></div>
+    </section>
+
+    <section id="albuns" class="min-h-screen flex flex-col justify-center items-center relative py-24 bg-slate-950">
+      <h2 class="text-7xl font-extrabold text-transparent drop-shadow-lg mb-5 z-10 bg-clip-text bg-gradient-to-r from-white to-emerald-600 animate-gradient -mt-12">
+        Álbuns
+      </h2>
+      <div class="relative w-full max-w-6xl flex items-center">
+        <button id="prevBtn" class="absolute right-290 z-20 bg-black/60 hover:bg-red-500/80 text-white rounded-full p-4 shadow-lg hover:transition-all top-1/2 -translate-y-1/2">
+          &#8592;
+        </button>
+        <div id="carousel" class="overflow-hidden w-full">
+          <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+            
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/Nevermind.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-sky-400 drop-shadow">Nevermind</h3>
+                <p class="text-gray-400 mt-1 text-lg">1991</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/hTWKbfoikeg?si=xePBDt_pFdKNlDN-" class="font-medium hover:text-sky-500">Smells Like Teen Spirit</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/vabnZ9-ex7o?si=i9h_m-LqLmM9r5hO" class="font-medium hover:text-sky-500">Come As You Are</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/pkcJEvMcnEg?si=-NzmWZ8tPTyIJVp7" class="font-medium hover:text-sky-500">Lithium</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/hybrid-theory.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-emerald-400 drop-shadow">Hybrid Theory</h3>
+                <p class="text-gray-400 mt-1 text-lg">2000</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/eVTXPUF4Oz4?si=AidLM8dpn9vjOwM8" class="font-medium hover:text-gray-600">In The End</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/Gd9OhYroLN0?si=vQI8zlUHy9liqfFT" class="font-medium hover:text-gray-600">Crawling</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/vjVkXlxsO8Q?si=HEqYGG4AeG_7hWWO" class="font-medium hover:text-gray-600">Papercut</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/toxicity.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-red-400 drop-shadow">Toxicity</h3>
+                <p class="text-gray-400 mt-1 text-lg">2001</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/eVTXPUF4Oz4?si=AidLM8dpn9vjOwM8" class="font-medium hover:text-red-600 transition-all">Chop Suey!</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/Gd9OhYroLN0?si=vQI8zlUHy9liqfFT" class="font-medium hover:text-red-600 transition-all">Toxicity</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/vjVkXlxsO8Q?si=HEqYGG4AeG_7hWWO" class="font-medium hover:text-red-600 transition-all">Aerials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/in-utero.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-yellow-400 drop-shadow">In Utero</h3>
+                <p class="text-gray-400 mt-1 text-lg">1993</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/n6P0SitRwy8?si=OHqaJbZlaS_WWhoE" class="text-white font-medium hover:text-yellow-500">Heart-Shaped-box</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/3rS6mZUo3fg?si=8hAjXsihjZe8ZLDH" class="text-white font-medium hover:text-yellow-500">Rape Me</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/aWmkuH1k7uA?si=lrpiqkLBuJzE6MzE" class="text-white font-medium hover:text-yellow-500">All Apologies</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/meteora.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-indigo-500 drop-shadow">Meteora</h3>
+                <p class="text-gray-400 mt-1 text-lg">2003</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/kXYiU_JCYtU?si=NHxNrBKcKUJuQaou" class="text-white font-medium hover:text-indigo-600">Numb</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/YLHpvjrFpe0?si=aPhQh2zWzQ20Y7bQ" class="text-white font-medium hover:text-indigo-600">From the Inside</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/LYU-8IFcDPw?si=XnLa5Wj7Hm7iw-sL" class="text-white font-medium hover:text-indigo-600">Faint</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/mezmerize.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-orange-500 drop-shadow">Mezmerize</h3>
+                <p class="text-gray-400 mt-1 text-lg">2005</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/zUzd9KyIDrM?si=Nt85TRPWG4CGRaGE" class="text-white font-medium hover:text-orange-600">B.Y.O.B</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/5XAK_My0zaw?si=8deWvGdscJqArAaU" class="text-white font-medium hover:text-orange-600">Sad Statue</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/L4M98z22pgI?si=6fgh6ByffsOuH7yJ" class="text-white font-medium hover:text-orange-600">Cigaro</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/bleach.webp" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-fuchsia-500 drop-shadow">Bleach</h3>
+                <p class="text-gray-400 mt-1 text-lg">1989</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/JIx2H-plXdU?si=noWS1hkt9HpJmrIZ" class="text-white font-medium hover:text-fuchsia-600">About a Girl</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/7E-KAP359ys?si=m0fgK5LNfKpuLHMQ" class="text-white font-medium hover:text-fuchsia-600">Blew</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/sp86SkWKRQE?si=JKSUBa4v0hisfjhr" class="text-white font-medium hover:text-fuchsia-600">School</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/from zero.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-pink-400 drop-shadow">From Zero</h3>
+                <p class="text-gray-400 mt-1 text-lg">2024</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/SRXH9AbT280?si=YUNy6XL5i5JIo0BK" class="text-white font-medium hover:text-pink-600">The Emptiness Machine</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/ZAt8oxY0GQo?si=xx7xGhRxiLWLriB7" class="text-white font-medium hover:text-pink-600">Heavy Is The Crown</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/97Mj6pXYMd8?si=L2wouJrFYIB0bJG_" class="text-white font-medium hover:text-pink-600">Up From the Bottom</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="min-w-[50%] md:min-w-[33.3333%] px-4">
+              <div class="relative group p-8 rounded-3xl shadow-2xl transition-all duration-300 flex flex-col items-center bg-transparent dark:bg-black/40 fade-scale">
+                <div class="relative w-full">
+                  <img src="/img/hypnotize.jpg" class="w-full h-60 object-cover rounded-2xl shadow-lg group-hover:brightness-75 transition-all duration-300" />
+                  <div class="absolute left-0 top-[-10%] w-full h-[120%] rounded-2xl pointer-events-none"></div>
+                </div>
+                <h3 class="text-3xl font-bold mt-6 text-rose-400 drop-shadow">Hypnotize</h3>
+                <p class="text-gray-400 mt-1 text-lg">2005</p>
+                <ul class="mt-6 space-y-2 text-center">
+                  <li>
+                    <a href="https://youtu.be/LoheCz4t2xc?si=FTaE4DN98LKMwpIl" class="text-white font-medium hover:text-rose-900">Hypnotize</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/DnGdoEa1tPg?si=Wi29UxW4pxAzOwtl" class="text-white font-medium hover:text-rose-900">lonely Day</a>
+                  </li>
+                  <li>
+                    <a href="https://youtu.be/-If2r9ENQfA?si=DKyY8_3a_drBIsWx" class="text-white font-medium hover:text-rose-900">Vicinity of Obscenity</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="nextBtn" class="absolute left-290 z-20 bg-black/60 hover:bg-emerald-500/80 text-white rounded-full p-4 shadow-lg hover:transition-all top-1/2 -translate-y-1/2">
+          &#8594;
+        </button>
+      </div>
+    </section>
+
+    <footer id="contact" class="h-full flex justify-center items-center flex-row space-x-10 bg-slate-900 py-8">
+      <a href="https://www.instagram.com/joaov.md?igsh=MTF0ZTJ4ZXV0amwzZQ==" target="_blank" class="flex items-center">
+        <img src="img/instagram (1).png" class="w-15 mb-0 cursor-pointer" />
+      </a>
+      <a href="https://github.com/JoaoVicDias08" target="_blank" class="flex items-center">
+        <img src="img/github.png" class="w-15 mb-0 cursor-pointer" />
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
