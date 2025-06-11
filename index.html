@@ -10,10 +10,10 @@
   <body class="m-0 p-0 box-border bg-slate-900 text-white">
     <header class="flex h-15 w-full items-center justify-between px-8">
       <div class="flex space-x-6">
-        <p class="flex items-center justify-center text-center bg-emerald-600 rounded-3xl text-black px-8 font-semibold shadow-md hover:bg-emerald-700 hover:text-white transition-all py-2 duration-300 cursor-pointer border border-emerald-700">
+        <p class="flex items-center justify-center text-center bg-emerald-600 rounded-3xl text-black px-8 font-semibold shadow-md hover:bg-emerald-700 hover:text-white transition-all h-10 duration-300 cursor-pointer border border-emerald-700">
           Entrar
         </p>
-        <p class="flex items-center justify-center text-center bg-emerald-600 rounded-3xl text-black px-8 font-semibold shadow-md hover:bg-emerald-700 hover:text-white transition-all py-2 duration-300 cursor-pointer border border-emerald-700 w-39">
+        <p class="flex items-center justify-center text-center bg-emerald-600 rounded-3xl text-black px-8 font-semibold shadow-md hover:bg-emerald-700 hover:text-white transition-all h-10 duration-300 cursor-pointer border border-emerald-700 w-40">
           Cadastrar-se
         </p>
       </div>
@@ -312,14 +312,33 @@
       </div>
     </section>
 
-    <footer id="contact" class="h-full flex justify-center items-center flex-row space-x-10 bg-slate-900 py-8">
-      <a href="https://www.instagram.com/joaov.md?igsh=MTF0ZTJ4ZXV0amwzZQ==" target="_blank" class="flex items-center">
-        <img src="img/instagram (1).png" class="w-15 mb-0 cursor-pointer" />
-      </a>
-      <a href="https://github.com/JoaoVicDias08" target="_blank" class="flex items-center">
-        <img src="img/github.png" class="w-15 mb-0 cursor-pointer" />
-      </a>
-    </footer>
+    <footer id="contact" class="p-4 md:p-8 lg:p-10 dark:bg-slate-900">
+  <div class="mx-auto max-w-screen-xl text-center">
+      <p class="flex items-center justify-center mb-4 text-3xl text-white">
+          <img src="img/contact.png" class="w-10 h-10 mr-2 bg-white rounded-3xl">
+          Contato    
+      </p>
+      <p class="my-6 text-gray-500 dark:text-gray-400">Este site foi desenvolvido com Tailwind Css e Javascript</p>
+      <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+          <li>
+              <a href="#home" class="mr-4 hover:underline md:mr-6 hover:text-emerald-400 transition-all cursor-pointer ">Home</a>
+          </li>
+          <li>
+              <a href="#bands" class="mr-4 hover:underline md:mr-6 hover:text-emerald-400 transition-all cursor-pointer " >Bandas</a>
+          </li>
+          <li>
+              <a href="#albuns" class="mr-4 hover:underline md:mr-6 hover:text-emerald-400 transition-all cursor-pointer ">Álbuns</a>
+          </li>
+          <li>
+              <a href="#contact" class="mr-4 hover:underline md:mr-6 hover:text-emerald-400 transition-all cursor-pointer " >Contato</a>
+          </li>
+      </ul>
+      <div class="flex justify-center items-center space-x-4 mb-6">
+     <a href="https://github.com/JoaoVicDias08"><img class="max-w-13" src="img/github.png"></a>
+     <a href="https://www.instagram.com/joaov.md?igsh=MTF0ZTJ4ZXV0amwzZQ=="><img class="max-w-13" src="img/instagram (1).png"></a>
+     </div>
+  </div>
+</footer>
     <script src="script.js"></script>
   </body>
 </html>
