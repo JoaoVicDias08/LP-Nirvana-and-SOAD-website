@@ -11,6 +11,11 @@
     background-position: 0% 50%;
   }
 }
+
+a {
+  text-decoration: none;
+}
+
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradient-move 4s ease-in-out infinite;
@@ -26,11 +31,12 @@
   transform: translateY(0);
 }
 .fade-scale {
-    opacity: 0;
-    transform: scale(0.95) translateY(40px);
-    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
-  }
-  .fade-scale.visible {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
+  opacity: 0;
+  transform: scale(0.95) translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-scale.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}

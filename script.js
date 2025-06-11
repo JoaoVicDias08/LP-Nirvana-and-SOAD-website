@@ -70,13 +70,17 @@ function onVisible(entries, observer) {
 const observer = new IntersectionObserver(onVisible, { threshold: 50 / 100 });
 document.querySelectorAll(".fade-up").forEach((img) => observer.observe(img));
 
- function onVisibleCard(entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }
-  const observerCard = new IntersectionObserver(onVisibleCard, { threshold: 0.2 });
-  document.querySelectorAll('.fade-scale').forEach(card => observerCard.observe(card));
+function onVisibleCard(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}
+const observerCard = new IntersectionObserver(onVisibleCard, {
+  threshold: 0.2,
+});
+document
+  .querySelectorAll(".fade-scale")
+  .forEach((card) => observerCard.observe(card));
